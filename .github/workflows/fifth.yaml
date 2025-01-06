@@ -1,0 +1,18 @@
+name: 🔁 5th lvl reusable workflow
+on:
+  workflow_call: {}
+
+jobs:
+  fourth-level-reusable-wf-job:
+    name: 🔁 5th lvl reusable workflow job
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: run script
+        run: |
+          echo "Hello, world!"
+
+# This will fail
+  sixt-level-reusable-wf:
+    name: Sixth level reusable workflow
+    uses: ./.github/workflows/sixth.yaml
