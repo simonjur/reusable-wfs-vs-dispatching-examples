@@ -2,7 +2,15 @@
 Examples of reusable workflows and dispatch events
 
 - reusable workflow
- - 2nd - 5th level example
+ - max 3 levels
+
+![too many lvls err](./docs/wf-too-deep-error.png)
+
+run id: https://github.com/simonjur/reusable-wfs-vs-dispatching-examples/actions/runs/12641365610
+
+3 levels run:
+
+ 
 
 - workflow dispatch
   - example with `workflow_dispatch` action 
