@@ -12,7 +12,6 @@ jobs:
         run: |
           echo "Hello, world!"
 
-#  second-level-reusable-wf:
-#    name: Second level reusable workflow
-#    runs-on: ubuntu-latest
-#    uses: ./.github/workflows/second.yaml
+  fourth-level-reusable-wf:
+    name: fourth level reusable workflow
+    uses: ./.github/workflows/fourth.yaml
