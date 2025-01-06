@@ -4,7 +4,7 @@ on:
 
 jobs:
   second-level-reusable-wf-job:
-    name: Second level reusable workflow job
+    name: 🔁 2nd lvl reusable workflow job
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
