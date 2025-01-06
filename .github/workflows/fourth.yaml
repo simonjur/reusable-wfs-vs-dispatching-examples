@@ -12,6 +12,3 @@ jobs:
         run: |
           echo "Hello, world!"
 
-  fifth-level-reusable-wf:
-    name: Fifth level reusable workflow
-    uses: ./.github/workflows/fifth.yaml
