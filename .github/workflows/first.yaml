@@ -14,5 +14,4 @@ jobs:
 
   second-level-reusable-wf:
     name: Second level reusable workflow
-    runs-on: ubuntu-latest
     uses: ./.github/workflows/second.yaml
