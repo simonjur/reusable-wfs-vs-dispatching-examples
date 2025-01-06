@@ -1,0 +1,17 @@
+name: main workflow
+on:
+  workflow_dispatch: {}
+
+jobs:
+  main-wf-direct-job:
+    runs-on: ubuntu-latest
+    name: Main workflow job
+    steps:
+      - uses: actions/checkout@v4
+      - name: run script
+        run: |
+          echo "Hello, world!"  
+
+  first-lvl-wf:
+    name: First level reusable workflow
+    uses: ./.github/workflows/first.yaml
